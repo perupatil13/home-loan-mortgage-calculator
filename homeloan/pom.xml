@@ -54,17 +54,17 @@
 
 
 		<!-- Spring Boot Starter Security (For JWT Authentication) -->
-		<dependency>
+		<!--<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
-		</dependency>
+		</dependency>-->
 
 		<!-- Java JWT (auth0) for creating and validating JWT tokens -->
-		<dependency>
+		<!--<dependency>
 			<groupId>com.auth0</groupId>
 			<artifactId>java-jwt</artifactId>
 			<version>3.18.2</version>
-		</dependency>
+		</dependency>-->
 
 		<!-- JUnit 5 (Jupiter) -->
 		<dependency>
@@ -163,11 +163,11 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
+		<!--<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
-		</dependency>
+		</dependency>-->
 	</dependencies>
 
 	<build>
