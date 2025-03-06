@@ -31,6 +31,7 @@
 		<java.version>17</java.version>
 		<spring-boot.version>3.2.2</spring-boot.version>
 		<springdoc-openapi.version>2.2.0</springdoc-openapi.version>
+		<spring.profiles.active>@spring.profiles.active@</spring.profiles.active>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -197,5 +198,34 @@
 			</plugin>
 		</plugins>
 	</build>
+	<!-- Maven Profiles -->
+	<profiles>
+		<!-- Development Profile -->
+		<profile>
+			<id>dev</id>
+			<properties>
+				<spring.profiles.active>dev</spring.profiles.active>
+			</properties>
+			<activation>
+				<activeByDefault>true</activeByDefault>  <!-- Dev profile is
+				active by default -->
+			</activation>
+		</profile>
 
+		<!-- Testing Profile -->
+		<profile>
+			<id>test</id>
+			<properties>
+				<spring.profiles.active>test</spring.profiles.active>
+			</properties>
+		</profile>
+
+		<!-- Production Profile -->
+		<profile>
+			<id>prod</id>
+			<properties>
+				<spring.profiles.active>prod</spring.profiles.active>
+			</properties>
+		</profile>
+	</profiles>
 </project>
