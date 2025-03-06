@@ -20,4 +20,4 @@
 ### Database :   In-memory H2 database  & PostgreSQL DB
 ###Auth  Spring Security Java JWT Token - version 3.18.2
 ####understand jwt token : https://jwt.io/
-###Spring profile 
+###Spring profile   : ./mvnw spring-boot:run -DSpring-boot.run.profile=prod
