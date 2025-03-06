@@ -11,7 +11,6 @@
 ###Swagger URL : http://localhost:8083/swagger-ui/index.html#/
 ###Check OpenAPI JSON: http://localhost:8083/v3/api-docs
 ###Load swagger manually : http://localhost:8083/swagger-ui/index.html?configUrl=/v3/api-docs#/
-### git token : //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
 ###Junit report : file:///C:/Users/dhanu/Documents/Peru's%20Job%20Hunt/homeloan/homeloan/target/site/jacoco/index.html
 ###junit-jupiter-api : 5.9.3
 ###mockito-core:5.2.0
