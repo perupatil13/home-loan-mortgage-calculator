@@ -34,27 +34,13 @@ public class MortgageRateController {
 	@GetMapping("/interest-rates")
 	public ResponseEntity getInterestRates() {
 		List<MortgageRate> mortageRateLst = mortageRateService.getInterestRates();
-		return new ResponseEntity<>(mortageRateLst,HttpStatus.OK);
+		return new ResponseEntity<>(mortageRateLst, HttpStatus.OK);
 	}
 
 	@PostMapping("/mortgage-check")
 	public ResponseEntity checkMortgage(@Valid @RequestBody MortgageCheckRequest request) {
 		MortgageCheckResult mortgageValue = mortageRateService.checkMortgage(request);
-		return new ResponseEntity<>(mortgageValue,HttpStatus.OK);
+		return new ResponseEntity<>(mortgageValue, HttpStatus.OK);
 	}
 
-	/*
-	 * 
-	 * Things to implement swagger 
-	 * exception handler - custom exceptions. All the
-	 * possibles status codes have not been covered. 
-	 * data type correctly seperate
-	 * business logic to service impl formula documentation Interest rates are
-	 * hard-coded in controller test case for these 
-	 * add logger & java doc 
-	 * Spring profile 
-	 * Spring security use recorders for mapping
-	 * 
-	 * 
-	 */
 }
